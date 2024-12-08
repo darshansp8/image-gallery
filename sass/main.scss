@@ -1,0 +1,59 @@
+// Color Scheme
+$primary-color: #2E8B57; //Dark Green
+
+// Accent Colors
+$accent-color: #32CD32; // Lime Green
+$accent-color-1: #50C878; //Emerald
+
+// Neutral Colors
+$white: #FAFAFA;
+$black: #202020;
+
+
+$primary: $primary-color;
+$secondary: $accent-color;
+$white: $white;
+$dark: $black;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Global CSS start
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    box-sizing: border-box;
+}
+
+// Global settings end
+
+// Header CSS start
+
+.header {
+    padding: 5rem;
+    height: 100vh;
+
+    &-left {
+        // height: inherit;
+        background-color: var($white );
+        color: var($black);
+    }
+
+}
+
+// Header CSS end
+
+// Gallery CSS start
+
+.gallery {
+    padding: 5rem;
+}
+
+// Gallery CSS end

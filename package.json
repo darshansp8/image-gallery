@@ -1,0 +1,15 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "Interactive image gallery",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss styles.css -w"
+  },
+  "author": "Darshan",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.82.0"
+  }
+}
