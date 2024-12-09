@@ -32,7 +32,7 @@ $dark: $black;
 
 body {
     box-sizing: border-box;
-    background-color: $accent-color-light;
+    // background-color: $accent-color-light;
 }
 
 // Global settings end
@@ -40,8 +40,8 @@ body {
 // Header CSS start
 
 .header {
-    padding: 5rem;
-    height: 100vh;
+    // padding: 5rem;
+    // height: 90vh;
 
     &-left {
         // height: inherit;
@@ -62,8 +62,21 @@ body {
 // Gallery CSS start
 
 .gallery {
-    padding: 5rem;
+    // padding: 5rem;
     height: auto;
+
+    // &-filter-item {
+    //     padding: 0.75rem 2rem;
+    // }
 }
 
 // Gallery CSS end
+
+// JS controlled CSS starts
+
+.active {
+    background-color: $accent-color-1;
+    padding: 1rem 2rem;
+}
+
+// JS controlled CSS ends

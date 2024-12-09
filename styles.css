@@ -11854,13 +11854,8 @@ textarea.form-control-lg {
 
 body {
   box-sizing: border-box;
-  background-color: hsl(140, 52%, 96%);
 }
 
-.header {
-  padding: 5rem;
-  height: 100vh;
-}
 .header-left {
   background-color: var(#FAFAFA);
   color: var(#202020);
@@ -11872,8 +11867,12 @@ body {
 }
 
 .gallery {
-  padding: 5rem;
   height: auto;
+}
+
+.active {
+  background-color: rgb(80, 200, 120);
+  padding: 1rem 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
