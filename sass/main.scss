@@ -40,8 +40,7 @@ body {
 // Header CSS start
 
 .header {
-    // padding: 5rem;
-    // height: 90vh;
+
 
     &-left {
         // height: inherit;
@@ -62,12 +61,9 @@ body {
 // Gallery CSS start
 
 .gallery {
-    // padding: 5rem;
     height: auto;
 
-    // &-filter-item {
-    //     padding: 0.75rem 2rem;
-    // }
+
 }
 
 // Gallery CSS end
@@ -80,3 +76,14 @@ body {
 }
 
 // JS controlled CSS ends
+
+// Media queries starts
+
+@media (max-width: 576px) {
+    .header {
+        &-image {
+            height: 60vh;
+        }
+    }
+
+}

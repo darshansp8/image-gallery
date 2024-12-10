@@ -55,6 +55,7 @@ filterButtons.forEach(button => {
         // Add "active" class to the clicked button
         button.classList.add("active");
 
+
         // Get the target attribute of the clicked button
         const target = button.getAttribute("data-target");
 

@@ -10,15 +10,17 @@
 </head>
 
 <body>
-    <header class="header container p-5">
+    <header class="header container p-sm-2">
         <div class="row h-100 pt-4">
-            <div class="col-12 col-md-6 header-left d-flex flex-column align-items-start justify-content-end">
-                <h1 class="header-text mb-3 text-primary">The Untamed Wilderness: Capturing Nature's Spirit</h1>
-                <h4 class="header-subtext text-dark">Explore the raw, unfiltered splendor of nature in
-                    every frame.</h4>
+            <div
+                class="col-md-12 col-xl-6 header-left d-flex flex-column align-items-start justify-content-end py-5 pe-5">
+                <h1 class="header-text mb-3 text-primary display-3">The Untamed Wilderness: Capturing Nature's Spirit
+                </h1>
+                <p class="header-subtext text-dark display-6">Explore the raw, unfiltered splendor of nature in
+                    every frame.</p>
                 <buttton class="btn btn-secondary mt-5 px-4 py-3 rounded-5">Explore Nature &rarr;</buttton>
             </div>
-            <div class="col-12 col-md-6 header-right rounded-5">
+            <div class="col-md-12 col-xl-6 header-right rounded-5 py-5">
                 <img class="header-image rounded-5" src="images/header_2x.jpg" alt="Road through dense forest" srcset="images/header.jpg 648w, images/header_1x.jpg 1920w,
                             images/header_2x.jpg 2400w" lazy>
             </div>
@@ -27,26 +29,19 @@
     </header>
     <section class="gallery container p-5">
         <div class="row">
-            <h6 class="gallery-title text-center h1 text-primary mb-4">The Wild in Focus</h6>
-            <p class="text-center h6 mb-3">Filters</p>
-            <!-- <ul class="gallery-filter d-flex justify-content-center gap-2">
-                <li class="gallery-filter-item rounded-5 btn btn-outline-dark">All</li>
-                <li class="gallery-filter-item rounded-5 btn btn-outline-dark">Forest</li>
-                <li class="gallery-filter-item rounded-5 btn btn-outline-dark">Mountains</li>
-                <li class="gallery-filter-item rounded-5 btn btn-outline-dark">Beaches</li>
-            </ul> -->
+            <h6 class="gallery-title text-center h1 text-primary mb-4 display-3">The Wild in Focus</h6>
             <div class="gallery-filter text-center" id="filter-button-group">
-                <button class="gallery-filter-item active btn btn-outline-secondary px-4 py-3 rounded-5"
+                <button class="gallery-filter-item active btn btn-outline-primary px-4 py-3 rounded-5 m-2"
                     data-target="all">All</button>
-                <button class="gallery-filter-item btn btn-outline-dark px-4 py-3 rounded-5"
+                <button class="gallery-filter-item btn btn-outline-primary px-4 py-3 rounded-5 m-2"
                     data-target="Forest">Forest</button>
-                <button class="gallery-filter-item btn btn-outline-dark px-4 py-3 rounded-5"
+                <button class="gallery-filter-item btn btn-outline-primary px-4 py-3 rounded-5 m-2"
                     data-target="Mountains">Mountains</button>
-                <button class="gallery-filter-item btn btn-outline-dark px-4 py-3 rounded-5"
+                <button class="gallery-filter-item btn btn-outline-primary px-4 py-3 rounded-5 m-2"
                     data-target="Beaches">Beaches</button>
             </div>
         </div>
-        <div class="row flex-wrap mt-5 gallery-images">
+        <div class="row mt-5 gallery-images">
             <div class="col-4 gap-5" data-id="Forest">1</div>
             <div class="col-4 gap-5" data-id="Mountains">2</div>
             <div class="col-4 gap-5" data-id="Beaches">3</div>

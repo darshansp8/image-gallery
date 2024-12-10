@@ -11875,4 +11875,10 @@ body {
   padding: 1rem 2rem;
 }
 
+@media (max-width: 576px) {
+  .header-image {
+    height: 60vh;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
