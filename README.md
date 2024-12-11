@@ -53,7 +53,7 @@ To set up the project locally, ensure you have the following installed on your s
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/image-gallery.git
+   git clonehttps://github.com/darshansp8/image-gallery.git
    ```
 
 2. Navigate to the project directory:
@@ -108,7 +108,7 @@ image-gallery/
 
 ## License
 
-This project is licensed under the [ISC License](https://opensource.org/licenses/ISC).
+This project is licensed under the [MIT License]
 
 ---
 
