@@ -53,7 +53,7 @@ To set up the project locally, ensure you have the following installed on your s
 
 1. Clone this repository:
    ```bash
-   git clonehttps://github.com/darshansp8/image-gallery.git
+   git clone https://github.com/darshansp8/image-gallery.git
    ```
 
 2. Navigate to the project directory:

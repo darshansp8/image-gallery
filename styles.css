@@ -11877,13 +11877,15 @@ body {
   overflow: hidden;
   transition: all ease-in-out 0.3s;
   outline: none;
+  aspect-ratio: 3/4;
 }
 .gallery-images .card:hover img, .gallery-images .card:focus img {
   transform: scale(1.1);
 }
 .gallery-images img {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
-  height: 60vh;
   transition: all ease-in-out 0.3s;
   outline: none;
 }

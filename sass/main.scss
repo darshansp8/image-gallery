@@ -72,6 +72,7 @@ body {
             overflow: hidden;
             transition: all ease-in-out 0.3s;
             outline: none;
+            aspect-ratio: 3/4;
         }
 
         & .card:hover img,
@@ -80,8 +81,9 @@ body {
         }
 
         & img {
+            height: 100%;
+            width: 100%;
             object-fit: cover;
-            height: 60vh;
             transition: all ease-in-out 0.3s;
             outline: none;
         }
