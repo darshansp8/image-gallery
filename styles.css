@@ -11890,8 +11890,16 @@ body {
   padding: 1rem 2rem;
 }
 
+@media (max-width: 768px) {
+  .gallery-images img {
+    height: 30vh;
+  }
+}
 @media (max-width: 576px) {
   .header-image {
+    height: 60vh;
+  }
+  .gallery-images img {
     height: 60vh;
   }
 }

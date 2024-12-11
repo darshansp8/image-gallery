@@ -101,6 +101,15 @@ body {
 // JS controlled CSS ends
 
 // Media queries starts
+@media (max-width: 768px) {
+    .gallery {
+        &-images {
+            & img {
+                height: 30vh;
+            }
+        }
+    }
+}
 
 @media (max-width: 576px) {
     .header {
@@ -109,4 +118,11 @@ body {
         }
     }
 
+    .gallery {
+        &-images {
+            & img {
+                height: 60vh;
+            }
+        }
+    }
 }
