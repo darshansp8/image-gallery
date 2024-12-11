@@ -63,30 +63,30 @@ body {
 .gallery {
     height: auto;
 
-    // &-images {
-    //     display: grid;
-    //     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    //     /* Responsive columns */
-    //     gap: 16px;
-    //     /* Space between items */
-    // }
+    &-images {
 
-    // &-item {
-    //     break-inside: avoid;
-    //     /* Prevent items from breaking inside columns */
-    //     overflow: hidden;
-    //     transition: transform 0.3s ease, opacity 0.3s ease;
-    //     /* Smooth animations */
+        transition: all ease-in-out .3s;
 
-    & img {
-        // height: 100%;
-        object-fit: cover;
-        /* Ensures the image fills its container */
-        height: 60vh;
-        // display: block;
+
+        & .card {
+            overflow: hidden;
+            transition: all ease-in-out 0.3s;
+        }
+
+        & .card:hover img,
+        & .card:focus img {
+            transform: scale(1.1);
+        }
+
+        & img {
+            object-fit: cover;
+            height: 60vh;
+            transition: all ease-in-out 0.3s;
+        }
+
+
     }
 
-    // }
 }
 
 // Gallery CSS end
