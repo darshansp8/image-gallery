@@ -45,56 +45,53 @@ document.addEventListener("DOMContentLoaded", () => {
             item.classList.remove('focused');  // Remove the class when the focus is removed
         });
     });
-})
 
-// JS for keyboard navigation ends
+    // JS for keyboard navigation ends
 
-// Logic to filter images starts
+    // Logic to filter images starts
 
-const filterButtons = document.querySelectorAll('.gallery-filter-item');
-console.log(filterButtons);
+    const filterButtons = document.querySelectorAll('.gallery-filter-item');
+    console.log(filterButtons);
 
-const items = [...document.querySelector('.gallery-images').children]; // Convert HTMLCollection to array
+    const items = [...document.querySelector('.gallery-images').children]; // Convert HTMLCollection to array
 
-filterButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        // Remove "active" class from all buttons
-        filterButtons.forEach(btn => btn.classList.remove("active"));
+    filterButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Remove "active" class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove("active"));
 
-        // Add "active" class to the clicked button
-        button.classList.add("active");
+            // Add "active" class to the clicked button
+            button.classList.add("active");
 
 
-        // Get the target attribute of the clicked button
-        const target = button.getAttribute("data-target");
+            // Get the target attribute of the clicked button
+            const target = button.getAttribute("data-target");
 
-        // Filter gallery items based on the target
-        items.forEach(item => {
-            item.style.display = "none"; // Hide all items initially
-            if (target === "all" || target === item.getAttribute("data-id")) {
-                item.style.display = "block"; // Show matching items
-            }
+            // Filter gallery items based on the target
+            items.forEach(item => {
+                item.style.display = "none"; // Hide all items initially
+                if (target === "all" || target === item.getAttribute("data-id")) {
+                    item.style.display = "block"; // Show matching items
+                }
+            });
         });
     });
-});
+    // Logic to filter images ends
 
-// Logic to filter images ends
-
-// JS for lightbox starts
-document.addEventListener("DOMContentLoaded", () => {
+    // JS for lightbox starts
     const lightbox = document.getElementById("lightbox");
     const lightboxImage = document.getElementById("lightboxImage");
     const closeLightbox = document.getElementById("closeLightbox");
     const prevButton = document.getElementById("prevButton");
     const nextButton = document.getElementById("nextButton");
-    const galleryItems = document.querySelectorAll(".gallery-item img");
+    const images = document.querySelectorAll(".gallery-item img");
 
-    let currentIndex = 0;
+    let currentImageIndex = 0;
 
     function openLightBox(index) {
-        currentIndex = index;
-        console.log(currentIndex)
-        const image = galleryItems[index];
+        currentImageIndex = index;
+        console.log(currentImageIndex)
+        const image = images[index];
         console.log(image)
         lightboxImage.src = image.src;
         lightboxImage.alt = image.alt || "Enlarged View";
@@ -108,13 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Navigate to next image
     function showNextImage() {
-        currentIndex = (currentIndex + 1) % galleryItems.length;
+        currentIndex = (currentIndex + 1) % images.length;
         openLightBox(currentIndex);
     }
 
     // Navigate to previous image
     function showPrevImage() {
-        currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
         openLightBox(currentIndex);
     }
 
@@ -147,3 +144,11 @@ document.addEventListener("DOMContentLoaded", () => {
     prevButton.addEventListener("click", showPrevImage);
     // JS for lightbox ends
 })
+
+
+
+
+
+
+
+
