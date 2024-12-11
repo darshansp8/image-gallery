@@ -1,46 +1,6 @@
 'use strict';
 
-// const galleryItems = document.querySelectorAll('.gallery-filter-item');
-
-// galleryItems.forEach(item => {
-//     item.addEventListener('click', () => {
-//         const clickedItem = event.currentTarget;
-//         if (clickedItem.classList.contains('btn-outline-dark')) {
-//             console.log("Hello")
-//             clickedItem.classList.add('btn-secondary');
-//             clickedItem.classList.remove('btn-outline-secondary');
-//         }
-//         else {
-//             clickedItem.classList.remove('btn-secondary');
-//             clickedItem.classList.add('btn-outline-dark');
-//         }
-//     })
-// })
-
-// const filterButtons = document.querySelectorAll('.gallery-filter-item');
-// console.log(filterButtons)
-
-// const items = document.querySelector('.gallery-images').children;
-
-// for (let i = 0; i < filterButtons.length; i++) {
-//     filterButtons[i].addEventListener("click", function () {
-//         for (let j = 0; j < filterButtons.length; j++) {
-//             filterButtons[j].classList.remove("active")
-//         }
-//         this.classList.add("active");
-//         const target = this.getAttribute("data-target");
-
-//         for (let k = 0; k < items.length; k++) {
-//             items[k].style.display = "none"
-//             if (target == items[k].getAttribute("data-id")) {
-//                 items[k].style.display = "block";
-//             }
-//             if (target == "all") {
-//                 items[k].style.display = "block"
-//             }
-//         }
-//     })
-// }
+// Logic to filter images starts
 
 const filterButtons = document.querySelectorAll('.gallery-filter-item');
 console.log(filterButtons);
@@ -68,3 +28,5 @@ filterButtons.forEach(button => {
         });
     });
 });
+
+// Logic to filter images ends

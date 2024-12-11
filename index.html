@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script> -->
     <title>Image Gallery</title>
 </head>
 
 <body>
-    <header class="header container p-sm-2">
+    <header class="header container">
         <div class="row h-100 pt-4">
             <div
                 class="col-md-12 col-xl-6 header-left d-flex flex-column align-items-start justify-content-end py-5 pe-5">
@@ -22,14 +25,14 @@
             </div>
             <div class="col-md-12 col-xl-6 header-right rounded-5 py-5">
                 <img class="header-image rounded-5" src="images/header_2x.jpg" alt="Road through dense forest" srcset="images/header.jpg 648w, images/header_1x.jpg 1920w,
-                            images/header_2x.jpg 2400w" lazy>
+                            images/header_2x.jpg 2400w">
             </div>
         </div>
 
     </header>
-    <section class="gallery container p-5">
+    <section class="gallery container">
         <div class="row">
-            <h6 class="gallery-title text-center h1 text-primary mb-4 display-3">The Wild in Focus</h6>
+            <h2 class="gallery-title text-center h1 text-primary mb-4 display-3">The Wild in Focus</h2>
             <div class="gallery-filter text-center" id="filter-button-group">
                 <button class="gallery-filter-item active btn btn-outline-primary px-4 py-3 rounded-5 m-2"
                     data-target="all">All</button>
@@ -41,24 +44,109 @@
                     data-target="Beaches">Beaches</button>
             </div>
         </div>
-        <div class="row mt-5 gallery-images">
-            <div class="col-4 gap-5" data-id="Forest">1</div>
-            <div class="col-4 gap-5" data-id="Mountains">2</div>
-            <div class="col-4 gap-5" data-id="Beaches">3</div>
-            <div class="col-4 gap-5" data-id="Mountains">4</div>
-            <div class="col-4 gap-5" data-id="Forest">5</div>
-            <div class="col-4 gap-5" data-id="Beaches">6</div>
-            <div class="col-4 gap-5" data-id="Beaches">7</div>
-            <div class="col-4 gap-5" data-id="Mountains">8</div>
-            <div class="col-4 gap-5" data-id="Forest">9</div>
-            <div class="col-4 gap-5" data-id="Forest">10</div>
-            <div class="col-4 gap-5" data-id="Mountains">11</div>
-            <div class="col-4 gap-5" data-id="Forest">12</div>
-            <div class="col-4 gap-5" data-id="Beaches">13</div>
-            <div class="col-4 gap-5" data-id="Beaches">14</div>
-            <div class="col-4 gap-5" data-id="Forest">15</div>
-            <div class="col-4 gap-5" data-id="Mountains">16</div>
-            <div class="col-4 gap-5" data-id="Forest">17</div>
+        <div class="row d-flex align-items-stretch mt-5 gallery-images pb-5">
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5 gallery-item" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5 gallery-item" data-id="Mountains">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5 gallery-item" data-id="Beaches">
+                <div class="card rounded-5 border-0">
+                    <img src="images/header_1x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100" loading="lazy"
+                        tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5 gallery-item" data-id="Mountains">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5 gallery-item" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-2_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Beaches">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Beaches">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Mountains">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-3_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-4_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Mountains">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-2_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Beaches">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Beaches">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-1_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-4_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Mountains">
+                <div class="card rounded-5 border-0">
+                    <img src="images/header_1x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100" loading="lazy"
+                        tabindex="0">
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 g-5" data-id="Forest">
+                <div class="card rounded-5 border-0">
+                    <img src="images/gallery/forest-3_3x.jpg" alt="" class="img-fluid rounded-5 card-img-top w-100"
+                        loading="lazy" tabindex="0">
+                </div>
+            </div>
         </div>
     </section>
 </body>

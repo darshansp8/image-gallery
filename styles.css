@@ -11869,6 +11869,11 @@ body {
 .gallery {
   height: auto;
 }
+.gallery img {
+  object-fit: cover;
+  /* Ensures the image fills its container */
+  height: 60vh;
+}
 
 .active {
   background-color: rgb(80, 200, 120);
