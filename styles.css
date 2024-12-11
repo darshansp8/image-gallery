@@ -11890,6 +11890,12 @@ body {
   padding: 1rem 2rem;
 }
 
+.focused {
+  border: 2px solid rgb(80, 200, 120);
+  /* Blue border when focused */
+  /* Optional: Add a glow effect */
+}
+
 @media (max-width: 768px) {
   .gallery-images img {
     height: 30vh;

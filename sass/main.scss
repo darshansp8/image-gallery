@@ -98,6 +98,13 @@ body {
     padding: 1rem 2rem;
 }
 
+.focused {
+    border: 2px solid $accent-color-1;
+    /* Blue border when focused */
+    // box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);                   
+    /* Optional: Add a glow effect */
+}
+
 // JS controlled CSS ends
 
 // Media queries starts
