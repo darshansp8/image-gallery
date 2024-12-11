@@ -121,6 +121,10 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Index", index)
             openLightBox(index)
         });
+
+        item.addEventListener('keydown', (e) => {
+            if (e.key === "Enter") openLightBox(index);
+        })
     });
     // Close lightbox on close button click
     closeLightbox.addEventListener("click", closeLightboxHandler);
